@@ -1,6 +1,6 @@
 const gameEl = document.querySelector("#puzzle");
 const guessesEl = document.querySelector("#guesses");
-const game1 = new Hangman("cat", 2);
+const game1 = new Hangman("sophie", 17);
 // To initially display on the web page
 gameEl.textContent = game1.getPuzzle();
 guessesEl.textContent = game1.statusMessage();

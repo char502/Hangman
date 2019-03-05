@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Hangman</title>
-    <!-- css -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="/images/favicon.png" rel="icon" />
   </head>
+
   <body>
-    <h1>Hangman Game</h1>
-    <h4>Type letters on the keyboard to make a guess</h4>
+    <!-- <h1>Hangman Game</h1> -->
+
     <div>
-      <h2><p id="puzzle"></p></h2>
-      <h3><p id="guesses"></p></h3>
+      <div id="puzzle" class="puzzle"></div>
+      <p id="guesses"></p>
+      <button id="reset" class="button">Reset</button>
     </div>
-    <script src="hangman.js"></script>
-    <script src="app.js"></script>
+    <script src="/scripts/requests.js"></script>
+    <script src="/scripts/hangman.js"></script>
+    <script src="/scripts/app.js"></script>
   </body>
 </html>

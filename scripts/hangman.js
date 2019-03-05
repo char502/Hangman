@@ -1,4 +1,3 @@
-// HTTP (Hypertext Transfer Protocol)
 class Hangman {
   constructor(word, remainingGuesses) {
     this.word = word.toLowerCase().split("");
@@ -21,7 +20,7 @@ class Hangman {
 
     console.log(this.status);
   }
-  statusMessage() {
+  get statusMessage() {
     const wordInPlay = this.word.join("");
 
     if (this.status === "playing") {
@@ -32,7 +31,7 @@ class Hangman {
       return "Great! You guessed the word";
     }
   }
-  getPuzzle() {
+  get puzzle() {
     let puzzle = "";
     // let newArr = [];
 
@@ -43,7 +42,7 @@ class Hangman {
         puzzle += "*";
       }
     });
-
+    // console.log(puzzle);
     return puzzle;
   }
   makeAGuess(guess) {
